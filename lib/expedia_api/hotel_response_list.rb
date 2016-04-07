@@ -17,7 +17,7 @@ module ExpediaApi
       @mentries.map(&:block)
     end
 
-    def raw_data
+    def entries
       @entries
     end
 
