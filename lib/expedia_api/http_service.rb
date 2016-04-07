@@ -1,5 +1,3 @@
-require 'faraday'
-
 module ExpediaApi
   module HTTPService
 
@@ -17,24 +15,23 @@ module ExpediaApi
       end
 
 
-      # Adding open and read timeouts
-      #
-      # return the connection obj with the timeouts set if they have been initialized
-      def add_timeouts(conn)
-        conn.options.timeout = 50
-        conn.options.open_timeout = 50
-        conn
-      end
-
       def perform_request(request_options: {}, parameters: {})
         args = common_parameters.merge(parameters)
         # figure out our options for this request
         # set up our Faraday connection
-        conn = Faraday.new(server)
-        conn = add_timeouts(conn)
-        response = conn.send(:get, API_PATH, args)
-        response
+        connection = Faraday.new(:url => server) do |faraday|
+          faraday.adapter  Faraday.default_adapter
+          faraday.request :json
+          faraday.response :json
+        end
+        connection.post do |req|
+          req.url API_PATH
+          req.headers['Content-Type'] = 'application/json'
+          req.body = args.to_json
+        end
       end
+
+
 
       # Common Parameters required for every Call to Expedia Server.
       def common_parameters
@@ -48,4 +45,3 @@ module ExpediaApi
 
   end
 end
-

@@ -96,4 +96,3 @@ module ExpediaApi
 
   end
 end
-

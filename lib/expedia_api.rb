@@ -1,3 +1,7 @@
+require 'json'
+require 'faraday'
+require 'faraday_middleware'
+
 require "expedia_api/version"
 require "expedia_api/http_service"
 require "expedia_api/client"
