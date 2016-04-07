@@ -1,0 +1,3 @@
+module ExpediaApi
+  VERSION = "0.1.0"
+end
