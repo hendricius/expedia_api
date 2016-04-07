@@ -3,22 +3,22 @@ module ExpediaApi
     include Enumerable
     attr_reader :response, :exception
 
-    def initialize(members: [], response: nil, exception: nil)
-      @members = members
+    def initialize(entries: [], response: nil, exception: nil)
+      @entries = entries
       @response = response
       @exception = exception
     end
 
     def each(&block)
-      @memebers.each(&:block)
+      @entries.each(&:block)
     end
 
     def map(&block)
-      @memebers.map(&:block)
+      @mentries.map(&:block)
     end
 
     def raw_data
-      @members
+      @entries
     end
 
     def success?

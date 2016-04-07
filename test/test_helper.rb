@@ -3,3 +3,4 @@ require 'expedia_api'
 
 require 'minitest/spec'
 require 'minitest/autorun'
+require 'webmock/minitest'
