@@ -4,7 +4,7 @@ module ExpediaApi
     attr_reader :response, :exception
 
     def initialize(entries: [], response: nil, exception: nil)
-      @entries = entries
+      @entries = extract_entries_from_response(response)
       @response = response
       @exception = exception
     end
@@ -28,6 +28,25 @@ module ExpediaApi
     def error?
       !!exception
     end
+
+    def extract_entries_from_response(response)
+      # probably an error ocurred connecting
+      if response.nil?
+        return []
+      end
+      body = response.body
+      if !body.is_a?(Hash) || body.nil?
+        return []
+      end
+      hotel_count = body["HotelCount"].to_i
+      if hotel_count == 1
+        [body["HotelInfoList"]["HotelInfo"]]
+      elsif hotel_count > 1
+        body["HotelInfoList"]["HotelInfo"]
+      else
+        []
+      end
+    end
+
   end
 end
-
