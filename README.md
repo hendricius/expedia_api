@@ -124,11 +124,18 @@ availonly:
     true
   description:
     return available hotels only. default: true
-
-    
 ```
 
 Please refer to the official API documentation by the Expedia.com team for more parameters.
+
+You can also setup an http proxy. Expedia whitelists IPs that are able to access their API.
+
+```
+  ExpediaApi.proxy_uri      = "http://proxy_uri.com:3128"
+  ExpediaApi.proxy_password = "foobar"
+  ExpediaApi.proxy_user     = "foobar"
+```
+
 
 ## Development
 

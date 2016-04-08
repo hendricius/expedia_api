@@ -10,6 +10,6 @@ require "expedia_api/hotel_response_list"
 
 module ExpediaApi
   class << self
-    attr_accessor :api_key
+    attr_accessor :api_key, :proxy_uri, :proxy_password, :proxy_user
   end
 end
