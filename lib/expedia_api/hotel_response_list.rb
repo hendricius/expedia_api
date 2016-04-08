@@ -17,6 +17,14 @@ module ExpediaApi
       @entries.map(&:block)
     end
 
+    def first
+      @entries.first
+    end
+
+    def last
+      @entries.last
+    end
+
     def entries
       @entries
     end

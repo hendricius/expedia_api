@@ -4,11 +4,15 @@ module ExpediaApi
       attr_reader :raw_data
 
       def initialize(raw_data)
-        @raw_data = raw_data
+        @raw_data = raw_data || {}
       end
 
       def available?
-        !!raw_data[:Price].fetch(:TotalRate, nil)
+        if raw_data[:Price]
+          !!raw_data[:Price].fetch(:TotalRate, nil)
+        else
+          false
+        end
       end
 
       def sold_out?

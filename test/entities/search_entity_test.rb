@@ -10,6 +10,9 @@ describe ExpediaApi::Entities::SearchEntity do
       assert entity.total_price_including_taxes > 0
       assert entity.available?
       refute entity.sold_out?
+      entity.raw_data[:Price] = nil
+      refute entity.available?
+      assert entity.sold_out?
     end
   end
 
