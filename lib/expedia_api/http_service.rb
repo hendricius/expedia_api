@@ -40,7 +40,7 @@ module ExpediaApi
 
       def proxy_options
         {
-          uri: ExpediaApi.proxy_user,
+          uri: ExpediaApi.proxy_uri,
           user: ExpediaApi.proxy_user,
           password: ExpediaApi.proxy_password
         }

@@ -13,9 +13,21 @@ describe ExpediaApi::HTTPService do
     end
   end
 
-  describe "farday_options" do
+  describe "faraday_options" do
     it "returns a hash with options" do
       assert_equal Hash, ExpediaApi::HTTPService.faraday_options.class
+    end
+  end
+
+  describe "proxy_options" do
+    it "returns a hash with options" do
+      ExpediaApi.proxy_uri      = "1"
+      ExpediaApi.proxy_user     = "2"
+      ExpediaApi.proxy_password = "3"
+      options = ExpediaApi::HTTPService.proxy_options
+      assert_equal ExpediaApi.proxy_uri, options[:uri]
+      assert_equal ExpediaApi.proxy_user, options[:user]
+      assert_equal ExpediaApi.proxy_password, options[:password]
     end
   end
 
