@@ -177,7 +177,7 @@ class ResponseMocks
               "Currency": "EUR",
               "Value": "118.26"
             },
-            "Description": "Fr\u00fch buchen und 20% sparen"
+            "Description": "Book now bro"
           },
           "RoomTypeList": {
             "RoomType": {

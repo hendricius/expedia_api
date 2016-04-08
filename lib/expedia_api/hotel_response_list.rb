@@ -22,7 +22,7 @@ module ExpediaApi
     end
 
     def entries=(entries)
-      @entries = entries.map {|e| e.with_indifferent_access }
+      @entries = entries.map {|e| ExpediaApi::Entities::SearchEntity.new(e.with_indifferent_access) }
     end
 
     def success?

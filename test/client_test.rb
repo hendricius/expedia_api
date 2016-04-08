@@ -39,5 +39,10 @@ describe ExpediaApi::Client do
       assert_equal Array, ExpediaApi::Client.new.get_list.entries.class
       assert_equal 2, ExpediaApi::Client.new.get_list.entries.length
     end
+    it "returns an array of SearchEntity objects" do
+      stub_request(:any, "http://ews.expedia.com/wsapi/rest/hotel/v1/search?format=json&key=test").
+        to_return(:status => 200, :body => ResponseMocks.two_entries, :headers => {})
+      assert_equal ExpediaApi::Entities::SearchEntity, ExpediaApi::Client.new.get_list.entries.first.class
+    end
   end
 end
