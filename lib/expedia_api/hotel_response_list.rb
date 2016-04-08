@@ -4,7 +4,7 @@ module ExpediaApi
     attr_reader :response, :exception
 
     def initialize(entries: [], response: nil, exception: nil)
-      @entries = extract_entries_from_response(response)
+      self.entries = extract_entries_from_response(response)
       @response = response
       @exception = exception
     end
@@ -14,11 +14,15 @@ module ExpediaApi
     end
 
     def map(&block)
-      @mentries.map(&:block)
+      @entries.map(&:block)
     end
 
     def entries
       @entries
+    end
+
+    def entries=(entries)
+      @entries = entries.map {|e| e.with_indifferent_access }
     end
 
     def success?
