@@ -2,7 +2,7 @@ module ExpediaApi
   # All method naming is done in correspondence with Expedia services and ruby conventions
   class Client
 
-    # paramters:
+    # parameters:
     # location:
     #   example:
     #     40.714269,-74.005973
