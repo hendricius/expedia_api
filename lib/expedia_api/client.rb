@@ -84,6 +84,8 @@ module ExpediaApi
     def get_list(parameters = {})
       data = request(parameters: parameters)
       ExpediaApi::HotelResponseList.new(response: data)
+    rescue Faraday::ParsingError => e
+      ExpediaApi::HotelResponseList.new(exception: e)
     rescue Faraday::ConnectionFailed => e
       ExpediaApi::HotelResponseList.new(exception: e)
     end

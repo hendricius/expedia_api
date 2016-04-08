@@ -4,8 +4,8 @@ module ExpediaApi
     attr_reader :response, :exception
 
     def initialize(entries: [], response: nil, exception: nil)
-      self.entries = extract_entries_from_response(response)
       @response = response
+      self.entries = extract_entries_from_response(response)
       @exception = exception
     end
 
@@ -33,12 +33,21 @@ module ExpediaApi
       !!exception
     end
 
+    def response_body
+    end
+
     def extract_entries_from_response(response)
       # probably an error ocurred connecting
       if response.nil?
         return []
       end
-      body = response.body
+      body = nil
+      begin
+        body = JSON.parse(response.body)
+      rescue JSON::ParserError => e
+        @exception = e
+        return []
+      end
       if !body.is_a?(Hash) || body.nil?
         return []
       end

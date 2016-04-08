@@ -11,7 +11,7 @@ module ExpediaApi
       #
       # return a complete server address with protocol
       def server_url
-        "https://#{API_SERVER}"
+        "http://#{API_SERVER}"
       end
 
       def faraday_options
@@ -30,14 +30,8 @@ module ExpediaApi
         # set up our Faraday connection
         connection = Faraday.new(faraday_options) do |faraday|
           faraday.adapter  Faraday.default_adapter
-          faraday.request :json
-          faraday.response :json
         end
-        connection.post do |req|
-          req.url API_PATH
-          req.headers['Content-Type'] = 'application/json'
-          req.body = args.to_json
-        end
+        connection.get(API_PATH, args)
       end
 
       def use_proxy?
