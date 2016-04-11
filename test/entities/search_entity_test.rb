@@ -24,11 +24,31 @@ describe ExpediaApi::Entities::SearchEntity do
 
   describe "total_price_including_taxes" do
     it "returns the total price if there is one in the JSON data" do
-      assert entity.total_price_including_taxes > 0
+      assert_equal 589.04, entity.total_price_including_taxes
     end
     it "returns nil if there is no price in the data" do
       entity.raw_data[:Price] = {}
       assert_equal nil, entity.total_price_including_taxes
+    end
+  end
+
+  describe "hotel_mandatory_taxes_and_fees" do
+    it "returns the data from the json" do
+      assert_equal 21.50, entity.hotel_mandatory_taxes_and_fees
+    end
+    it "returns nil if there is no value provided" do
+      entity.raw_data[:HotelMandatoryTaxesAndFees] = {}
+      assert_equal nil, entity.hotel_mandatory_taxes_and_fees
+    end
+  end
+
+  describe "hotel_mandatory_taxes_and_fees_currency" do
+    it "returns the data from the json" do
+      assert_equal "EUR", entity.hotel_mandatory_taxes_and_fees_currency
+    end
+    it "returns nil if there is no value provided" do
+      entity.raw_data[:HotelMandatoryTaxesAndFees] = {}
+      assert_equal nil, entity.hotel_mandatory_taxes_and_fees_currency
     end
   end
 

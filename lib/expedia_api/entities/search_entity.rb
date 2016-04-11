@@ -21,7 +21,28 @@ module ExpediaApi
 
       def total_price_including_taxes
         if available?
-          raw_data[:Price][:TotalRate][:Value].to_f
+          price = raw_data[:Price][:TotalRate][:Value].to_f
+          if hotel_mandatory_taxes_and_fees
+            price + hotel_mandatory_taxes_and_fees
+          else
+            price
+          end
+        else
+          nil
+        end
+      end
+
+      def hotel_mandatory_taxes_and_fees
+        if raw_data[:HotelMandatoryTaxesAndFees] && raw_data[:HotelMandatoryTaxesAndFees][:Value]
+          raw_data[:HotelMandatoryTaxesAndFees][:Value].to_f
+        else
+          nil
+        end
+      end
+
+      def hotel_mandatory_taxes_and_fees_currency
+        if raw_data[:HotelMandatoryTaxesAndFees] && raw_data[:HotelMandatoryTaxesAndFees][:Currency]
+          raw_data[:HotelMandatoryTaxesAndFees][:Currency]
         else
           nil
         end
