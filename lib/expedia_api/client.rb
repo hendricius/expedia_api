@@ -81,7 +81,7 @@ module ExpediaApi
     #     true
     #   description:
     #     return available hotels only. default: true
-    def get_list(parameters = {})
+    def search_hotels(parameters = {})
       data = request(parameters: parameters)
       ExpediaApi::HotelResponseList.new(response: data)
     rescue Faraday::ParsingError => e
