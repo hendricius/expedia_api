@@ -5,6 +5,7 @@ describe ExpediaApi::Client do
   before(:each) do
     ExpediaApi.api_key = "test"
   end
+  let(:client) { ExpediaApi::Client.new }
   describe "#initialize" do
     it "returns a client object" do
       assert_equal ExpediaApi::Client, ExpediaApi::Client.new.class
@@ -47,7 +48,6 @@ describe ExpediaApi::Client do
   end
 
   describe "#search_packages" do
-    let(:client) { ExpediaApi::Client.new }
     it "raises an ArgumentError if invalid parameters are passed" do
       assert_raises ArgumentError do
          client.search_packages
@@ -60,6 +60,18 @@ describe ExpediaApi::Client do
       assert_raises ArgumentError do
         client.search_packages(from_date: Date.new, to_date: Date.new)
       end
+    end
+  end
+
+  describe "#build_package_search_request_path" do
+    it "returns the path" do
+      arguments = {
+        from_date: Date.parse("2016-09-07"),
+        to_date: Date.parse("2016-09-15"),
+        from_airport: "HAM",
+        to_airport: "SYD"
+      }
+      assert_equal "2016-09-07/HAM/SYD/2016-09-15/SYD/HAM", client.send(:build_package_search_request_path, arguments)
     end
   end
 end

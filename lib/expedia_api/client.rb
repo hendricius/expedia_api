@@ -107,5 +107,11 @@ module ExpediaApi
       true
     end
 
+    def build_package_search_request_path(from_airport:, to_airport:, from_date:, to_date:)
+      from_date = from_date.strftime("%F")
+      to_date   = to_date.strftime("%F")
+      "#{from_date}/#{from_airport}/#{to_airport}/#{to_date}/#{to_airport}/#{from_airport}"
+    end
+
   end
 end
