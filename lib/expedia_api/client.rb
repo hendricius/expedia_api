@@ -90,10 +90,21 @@ module ExpediaApi
       ExpediaApi::HotelResponseList.new(exception: e)
     end
 
+    def search_packages(hotel_ids: [], region_ids: [], from_date:, to_date:, from_airport:, to_airport:, other_options: {})
+      validate_package_arguments({hotel_ids: hotel_ids, region_ids: region_ids})
+    end
+
     private
 
     def request(request_options: {}, parameters: {})
       HTTPService.perform_request(request_options: request_options, parameters: parameters)
+    end
+
+    def validate_package_arguments(args)
+      if args[:hotel_ids].empty? && args[:region_ids].empty?
+        raise ArgumentError
+      end
+      true
     end
 
   end

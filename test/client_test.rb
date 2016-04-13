@@ -45,4 +45,21 @@ describe ExpediaApi::Client do
       assert_equal ExpediaApi::Entities::SearchEntity, ExpediaApi::Client.new.search_hotels.entries.first.class
     end
   end
+
+  describe "#search_packages" do
+    let(:client) { ExpediaApi::Client.new }
+    it "raises an ArgumentError if invalid parameters are passed" do
+      assert_raises ArgumentError do
+         client.search_packages
+      end
+      # hotel ids or region ids must be there
+      assert_raises ArgumentError do
+        client.search_packages(from_date: Date.new, to_date: Date.new, from_airport: "HAM", to_airport: "FUH")
+      end
+      # airport must be there
+      assert_raises ArgumentError do
+        client.search_packages(from_date: Date.new, to_date: Date.new)
+      end
+    end
+  end
 end
