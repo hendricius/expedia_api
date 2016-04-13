@@ -9,6 +9,7 @@ require "expedia_api/client"
 require "expedia_api/hotel_response_list"
 require "expedia_api/entities"
 require "expedia_api/entities/search_entity"
+require "expedia_api/entities/package_entity"
 
 module ExpediaApi
   class << self

@@ -1,0 +1,210 @@
+{
+    "ErrorList": {
+        "Error": {
+            "Code": "128",
+            "Details": "The requested hotels are unavailable.HotelIDs [4517009]."
+        }
+    },
+    "FlightList": {
+        "Flight": {
+            "FlightIndex": "1",
+            "FlightItinerary": {
+                "FlightLeg": [
+                    {
+                        "FlightDuration": "PT21H50M",
+                        "FlightLegIndex": "1",
+                        "FlightSegment": [
+                            {
+                                "ArrivalAirportCode": "DUS",
+                                "ArrivalDateTime": "2016-09-07T08:30:00",
+                                "CarrierCode": "AB",
+                                "DepartureAirportCode": "HAM",
+                                "DepartureDateTime": "2016-09-07T07:30:00",
+                                "FlightDuration": "PT1H0M",
+                                "FlightNumber": "6743",
+                                "FlightSegmentIndex": "1"
+                            },
+                            {
+                                "ArrivalAirportCode": "AUH",
+                                "ArrivalDateTime": "2016-09-07T20:20:00",
+                                "CarrierCode": "AB",
+                                "DepartureAirportCode": "DUS",
+                                "DepartureDateTime": "2016-09-07T11:30:00",
+                                "FlightDuration": "PT6H50M",
+                                "FlightNumber": "4008",
+                                "FlightSegmentIndex": "2"
+                            },
+                            {
+                                "ArrivalAirportCode": "SYD",
+                                "ArrivalDateTime": "2016-09-08T17:55:00",
+                                "CarrierCode": "AB",
+                                "DepartureAirportCode": "AUH",
+                                "DepartureDateTime": "2016-09-07T21:55:00",
+                                "FlightDuration": "PT14H0M",
+                                "FlightNumber": "4070",
+                                "FlightSegmentIndex": "3"
+                            }
+                        ]
+                    },
+                    {
+                        "FlightDuration": "PT22H40M",
+                        "FlightLegIndex": "2",
+                        "FlightSegment": [
+                            {
+                                "ArrivalAirportCode": "AUH",
+                                "ArrivalDateTime": "2016-09-15T23:05:00",
+                                "CarrierCode": "AB",
+                                "DepartureAirportCode": "SYD",
+                                "DepartureDateTime": "2016-09-15T14:35:00",
+                                "FlightDuration": "PT14H30M",
+                                "FlightNumber": "5477",
+                                "FlightSegmentIndex": "1"
+                            },
+                            {
+                                "ArrivalAirportCode": "DUS",
+                                "ArrivalDateTime": "2016-09-16T07:20:00",
+                                "CarrierCode": "AB",
+                                "DepartureAirportCode": "AUH",
+                                "DepartureDateTime": "2016-09-16T02:10:00",
+                                "FlightDuration": "PT7H10M",
+                                "FlightNumber": "4009",
+                                "FlightSegmentIndex": "2"
+                            },
+                            {
+                                "ArrivalAirportCode": "HAM",
+                                "ArrivalDateTime": "2016-09-16T09:15:00",
+                                "CarrierCode": "AB",
+                                "DepartureAirportCode": "DUS",
+                                "DepartureDateTime": "2016-09-16T08:15:00",
+                                "FlightDuration": "PT1H0M",
+                                "FlightNumber": "6742",
+                                "FlightSegmentIndex": "3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "FlightPrice": {
+                "BaseRate": {
+                    "Currency": "EUR",
+                    "Value": "1166.00"
+                },
+                "TaxesAndFees": {
+                    "Currency": "EUR",
+                    "Value": "982.76"
+                },
+                "TotalRate": {
+                    "Currency": "EUR",
+                    "Value": "2148.76"
+                }
+            }
+        }
+    },
+    "HotelList": {
+        "CheckInDate": "2016-09-08",
+        "CheckOutDate": "2016-09-15",
+        "Hotel": [
+            {
+                "Description": "Dank der ausgezeichneten Lage im Herzen von Sydney ist dieses Hotel im luxuri\u00f6sen Stil zu Fu\u00df nur 10 Minuten entfernt von: Museum of Contemporary Art und Circular Quay. Ebenfalls nur 2 km entfernt: Sydney Opera House und Sydney Harbour Bridge. ",
+                "HotelID": "18811",
+                "HotelIndex": "1",
+                "HotelPrice": {
+                    "TotalRate": {
+                        "Currency": "EUR",
+                        "Value": "1234.79"
+                    }
+                },
+                "Location": {
+                    "City": "Sydney",
+                    "Country": "AUS",
+                    "GeoLocation": {
+                        "Latitude": "-33.862572",
+                        "Longitude": "151.209111"
+                    },
+                    "Province": "NSW",
+                    "StreetAddress": "30 Pitt Street "
+                },
+                "Name": "Sydney Harbour Marriott Hotel at Circular Quay",
+                "OverviewThumbnail": "https://images.trvl-media.com/hotels/1000000/20000/18900/18811/18811_204_t.jpg",
+                "RoomRatePlanDescription": "Standardzimmer, Stadtblick",
+                "RoomsRemaining": "5",
+                "StarRating": "5.0",
+                "TravelerReviewCount": "511",
+                "TravelerReviewRating": "4.4"
+            },
+            {
+                "Description": "Dank der ausgezeichneten Lage am Strand ist dieses Hotel zu Fu\u00df nur 10 Minuten entfernt von: Bondi Markets und Bondi Beach. Ebenfalls nur 15 Minuten entfernt: Bondi Icebergs und Bondi Golf Club. ",
+                "HotelID": "11103142",
+                "HotelIndex": "2",
+                "HotelPrice": {
+                    "TotalRate": {
+                        "Currency": "EUR",
+                        "Value": "1210.51"
+                    }
+                },
+                "Location": {
+                    "City": "Bondi Beach",
+                    "Country": "AUS",
+                    "GeoLocation": {
+                        "Latitude": "-33.889693",
+                        "Longitude": "151.275401"
+                    },
+                    "Province": "NSW",
+                    "StreetAddress": "178 Campbell Parade "
+                },
+                "Name": "Hotel Bondi",
+                "OverviewThumbnail": "https://images.trvl-media.com/hotels/12000000/11110000/11103200/11103142/11103142_25_t.jpg",
+                "Promotion": {
+                    "Amount": {
+                        "Currency": "EUR",
+                        "Value": "304.58"
+                    },
+                    "Description": "Jetzt buchen und sparen"
+                },
+                "RoomRatePlanDescription": "Standard-Doppelzimmer, 1 Schlafzimmer, eigenes Bad, zum Innenhof hin",
+                "RoomsRemaining": "10",
+                "StarRating": "3.5"
+            }
+        ]
+    },
+    "PackageSearchResultList": {
+        "PackageSearchResult": [
+            {
+                "BrandedDealsMarker": {
+                    "BrandedDealsType": [
+                        "FreeOneNightHotel",
+                        "HotelSavingsFreeNights"
+                    ]
+                },
+                "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=ba28356e-ee46-476c-a52c-68f82d135680-0&nRooms=1&nAdults=R1:2&departTLA=L1:HAM|L2:SYD&arrivalTLA=L1:SYD|L2:HAM&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=178138&price=3103.66&currencyCode=EUR",
+                "FlightReferenceIndex": "1",
+                "HotelReferenceIndex": "1",
+                "PackagePrice": {
+                    "TotalPrice": {
+                        "Currency": "EUR",
+                        "Value": "3103.66"
+                    },
+                    "TotalSavings": {
+                        "Currency": "EUR",
+                        "Value": "279.89"
+                    }
+                }
+            },
+            {
+                "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=ba28356e-ee46-476c-a52c-68f82d135680-1&nRooms=1&nAdults=R1:2&departTLA=L1:HAM|L2:SYD&arrivalTLA=L1:SYD|L2:HAM&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=6049745&price=3359.27&currencyCode=EUR",
+                "FlightReferenceIndex": "1",
+                "HotelReferenceIndex": "2",
+                "PackagePrice": {
+                    "TotalPrice": {
+                        "Currency": "EUR",
+                        "Value": "3359.27"
+                    },
+                    "TotalSavings": {
+                        "Currency": "EUR",
+                        "Value": "0.00"
+                    }
+                }
+            }
+        ]
+    }
+}

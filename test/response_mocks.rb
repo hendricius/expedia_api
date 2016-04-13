@@ -228,4 +228,21 @@ class ResponseMocks
       }
     }.to_json
   end
+
+  def self.package_search_one_hotel
+    read_json("packages/one_hotel")
+  end
+
+  def self.package_search_many_hotels
+    read_json("packages/many_hotels")
+  end
+
+  def self.package_search_multiple_stops_many_hotels
+    read_json("packages/multiple_stops_multiple_hotels")
+  end
+
+  def self.read_json(name)
+    content = File.read(File.expand_path("../requests/#{name}.json", __FILE__))
+    JSON.parse(content)
+  end
 end
