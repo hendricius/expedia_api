@@ -46,6 +46,28 @@ module ExpediaApi
         raise ArgumentError, "implement me"
       end
 
+      private
+
+      # extracts an array of data from the response
+      #
+      # returns an array.
+      def extract_data_from_response(response)
+        if response.nil?
+          return []
+        end
+        body = nil
+        begin
+          body = JSON.parse(response.body)
+        rescue JSON::ParserError => e
+          @exception = e
+          return []
+        end
+        if !body.is_a?(Hash) || body.nil?
+          return []
+        end
+        body
+      end
+
     end
   end
 end
