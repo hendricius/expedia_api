@@ -2,7 +2,6 @@ module ExpediaApi
   module HTTPService
 
     API_SERVER = 'ews.expedia.com'
-    API_PATH   = 'wsapi/rest/hotel/v1/search'
 
     class << self
 
@@ -24,14 +23,14 @@ module ExpediaApi
         options
       end
 
-      def perform_request(request_options: {}, parameters: {})
+      def perform_request(request_options: {}, parameters: {}, uri:)
         args = common_parameters.merge(parameters)
         # figure out our options for this request
         # set up our Faraday connection
         connection = Faraday.new(faraday_options) do |faraday|
           faraday.adapter  Faraday.default_adapter
         end
-        connection.get(API_PATH, args)
+        connection.get(uri, args)
       end
 
       def use_proxy?

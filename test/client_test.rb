@@ -16,7 +16,7 @@ describe ExpediaApi::Client do
     it "returns a response class item" do
       stub_request(:any, "http://ews.expedia.com/wsapi/rest/hotel/v1/search?format=json&key=test").
         to_return(:status => 200, :body => "[]", :headers => {})
-      assert_equal ExpediaApi::HotelResponseList, ExpediaApi::Client.new.search_hotels.class
+      assert_equal ExpediaApi::ResponseLists::Hotels, ExpediaApi::Client.new.search_hotels.class
     end
     it "returns an empty array if no data is returned" do
       stub_request(:any, "http://ews.expedia.com/wsapi/rest/hotel/v1/search?format=json&key=test").
@@ -48,6 +48,15 @@ describe ExpediaApi::Client do
   end
 
   describe "#search_packages" do
+    let(:sample_arguments) do
+      {
+        from_date: Date.parse("2016-09-07"),
+        to_date: Date.parse("2016-09-15"),
+        from_airport: "HAM",
+        to_airport: "SYD",
+        hotel_ids: [1337]
+      }
+    end
     it "raises an ArgumentError if invalid parameters are passed" do
       assert_raises ArgumentError do
          client.search_packages
@@ -60,6 +69,13 @@ describe ExpediaApi::Client do
       assert_raises ArgumentError do
         client.search_packages(from_date: Date.new, to_date: Date.new)
       end
+    end
+    it "returns a package response list do" do
+      stub_request(:get, "http://ews.expedia.com/wsapi/rest/package/v1/search/2016-09-07/HAM/SYD/2016-09-15/SYD/HAM?format=json&hotelids%5B%5D=1337&key=test").
+        to_return(:status => 200, :body => ResponseMocks.package_search_multiple_stops_many_hotels.to_json, :headers => {})
+
+      data = client.search_packages(sample_arguments)
+      assert_equal ExpediaApi::ResponseLists::Packages, data.class
     end
   end
 
