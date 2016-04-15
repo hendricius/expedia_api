@@ -13,14 +13,34 @@ describe ExpediaApi::ResponseLists::Packages do
       hotel_ids: [1337]
     }
   end
-  let(:list) {
+  let(:response_list) {
     stub_request(:get, "http://ews.expedia.com/wsapi/rest/package/v1/search/2016-09-07/HAM/SYD/2016-09-15/SYD/HAM?format=json&hotelids%5B%5D=1337&key=test").
     to_return(:status => 200, :body => ResponseMocks.package_search_multiple_stops_many_hotels.to_json, :headers => {})
     client.search_packages(sample_arguments)
   }
+  let(:flights_json) do
+    JSON.parse(response_list.response.body).with_indifferent_access[:FlightList][:Flight]
+  end
   describe "#test_data" do
     it "is a list" do
-      assert_equal ExpediaApi::ResponseLists::Packages, list.class
+      assert_equal ExpediaApi::ResponseLists::Packages, response_list.class
+    end
+  end
+
+  describe "#extract_flights" do
+    let(:sample_flight_entity) do
+      response_list.extract_flights(flights_json).first
+    end
+    it "returns an array of flights" do
+      assert_equal ExpediaApi::Entities::PackageFlight, sample_flight_entity.class
+    end
+    it "has flight legs associated" do
+      assert_equal Array, sample_flight_entity.flight_legs.class
+      assert_equal true, sample_flight_entity.flight_legs.length > 1
+    end
+
+    it "has flight segments associated" do
+      assert_equal true, sample_flight_entity.flight_legs.first.segments.length > 1
     end
   end
 end

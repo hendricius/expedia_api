@@ -6,28 +6,30 @@ module ExpediaApi
 
       def initialize(entries: [], response: nil, exception: nil)
         @response    = response
-        self.entries = extract_entries_from_response(response)
         @exception   = exception
       end
 
       def each(&block)
-        @entries.each(&:block)
+        entries.each(&:block)
       end
 
       def map(&block)
-        @entries.map(&:block)
+        entries.map(&:block)
       end
 
       def first
-        @entries.first
+        entries.first
       end
 
       def last
-        @entries.last
+        entries.last
       end
 
       def entries
-        @entries
+        @entries ||= begin
+          self.entries = extract_entries_from_response(@response)
+          self.entries
+        end
       end
 
       def entries=(entries)

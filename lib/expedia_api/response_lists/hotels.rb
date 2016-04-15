@@ -3,7 +3,11 @@ module ExpediaApi
     class Hotels < BaseResponseList
 
       def entries=(entries)
-        @entries = entries.map {|e| ExpediaApi::Entities::SearchEntity.new(e.with_indifferent_access) }
+        if entries
+          @entries = entries.map {|e| ExpediaApi::Entities::SearchEntity.new(e.with_indifferent_access) }
+        else
+          @entries = []
+        end
       end
 
       def extract_entries_from_response(response)
