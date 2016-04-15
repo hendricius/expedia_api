@@ -15,19 +15,23 @@ module ExpediaApi
         return [] if json.empty?
         json = json.with_indifferent_access
         flights  = extract_flights(json[:FlightList][:Flight])
-        hotels   = extract_hotels(json[:HotelList])
+        hotels   = extract_hotels(json[:HotelList][:Hotel])
         packages = extract_packages(json["PackageSearchResultList"]["PackageSearchResult"], hotels: hotels, flights: flights)
         packages
       end
 
-      def extract_flights(json)
+      def extract_flights(flights_json)
         # right now only 1 flight
-        [ExpediaApi::Entities::PackageFlight.new(json)]
+        [ExpediaApi::Entities::PackageFlight.new(flights_json)]
       end
 
-      def extract_hotels(json)
+      def extract_hotels(hotels_json)
+        hotels_json.map do |hotel|
+          ExpediaApi::Entities::PackageHotel.new(hotel)
+        end
       end
 
+      # todo implement me
       def extract_packages(json, flights: [], hotels: [])
       end
     end

@@ -21,6 +21,10 @@ describe ExpediaApi::ResponseLists::Packages do
   let(:flights_json) do
     JSON.parse(response_list.response.body).with_indifferent_access[:FlightList][:Flight]
   end
+  let(:hotels_json) do
+    JSON.parse(response_list.response.body).with_indifferent_access[:HotelList][:Hotel]
+  end
+
   describe "#test_data" do
     it "is a list" do
       assert_equal ExpediaApi::ResponseLists::Packages, response_list.class
@@ -41,6 +45,15 @@ describe ExpediaApi::ResponseLists::Packages do
 
     it "has flight segments associated" do
       assert_equal true, sample_flight_entity.flight_legs.first.segments.length > 1
+    end
+  end
+
+  describe "#extract_hotels" do
+    let(:sample_hotel_entity) do
+      response_list.extract_hotels(hotels_json).first
+    end
+    it "returns an array array of hotels" do
+      assert_equal ExpediaApi::Entities::PackageHotel, sample_hotel_entity.class
     end
   end
 end
