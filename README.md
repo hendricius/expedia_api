@@ -39,7 +39,17 @@ Then when using the API create a new client object:
 
 ```
 client = ExpediaApi::Client.new
+```
+
+Search Hotels:
+```
 client.get_list({})
+```
+
+Search Packages:
+
+```
+client.search_packages({})
 ```
 
 The parameters you can pass to `get_list` are the following:

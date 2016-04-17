@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.description       = "Expediacom is a lightweight flexible Ruby SDK for the official Expedia.com API"
   spec.summary           = "Wrapper for the Expedia.com API"
-  spec.homepage          = "https://github.com/hendricius/expediacom"
+  spec.homepage          = "https://github.com/hendricius/expedia_api"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
