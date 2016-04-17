@@ -40,8 +40,6 @@ Then when using the API create a new client object:
 ```
 client = ExpediaApi::Client.new
 client.get_list({})
-
-
 ```
 
 The parameters you can pass to `get_list` are the following:
