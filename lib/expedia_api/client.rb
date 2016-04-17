@@ -81,19 +81,48 @@ module ExpediaApi
     #     true
     #   description:
     #     return available hotels only. default: true
-    def get_list(parameters = {})
-      data = request(parameters: parameters)
-      ExpediaApi::HotelResponseList.new(response: data)
+    def search_hotels(parameters = {})
+      data = request(parameters: parameters, uri: 'wsapi/rest/hotel/v1/search')
+      ExpediaApi::ResponseLists::Hotels.new(response: data)
     rescue Faraday::ParsingError => e
-      ExpediaApi::HotelResponseList.new(exception: e)
+      ExpediaApi::ResponseLists::Hotels.new(exception: e)
     rescue Faraday::ConnectionFailed => e
-      ExpediaApi::HotelResponseList.new(exception: e)
+      ExpediaApi::ResponseLists::Hotels.new(exception: e)
+    end
+
+    def search_packages(hotel_ids: [], region_ids: [], from_date:, to_date:, from_airport:, to_airport:, other_options: {})
+      validate_package_arguments({hotel_ids: hotel_ids, region_ids: region_ids})
+      parameters = {}
+      parameters[:hotelids]  = hotel_ids   if hotel_ids.length
+      parameters[:regionids] = region_ids  if region_ids.length
+      path_uri = build_package_search_request_path(from_airport: from_airport, to_airport: to_airport, from_date: from_date, to_date: to_date)
+      base_uri = "/wsapi/rest/package/v1/search"
+      full_uri = "#{base_uri}/#{path_uri}"
+      data = request(parameters: parameters, uri: full_uri)
+      ExpediaApi::ResponseLists::Packages.new(response: data)
+    rescue Faraday::ParsingError => e
+      ExpediaApi::PackageResponseList.new(exception: e)
+    rescue Faraday::ConnectionFailed => e
+      ExpediaApi::PackageResponseList.new(exception: e)
     end
 
     private
 
-    def request(request_options: {}, parameters: {})
-      HTTPService.perform_request(request_options: request_options, parameters: parameters)
+    def request(request_options: {}, parameters: {}, uri:)
+      HTTPService.perform_request(request_options: request_options, parameters: parameters, uri: uri)
+    end
+
+    def validate_package_arguments(args)
+      if args[:hotel_ids].empty? && args[:region_ids].empty?
+        raise ArgumentError
+      end
+      true
+    end
+
+    def build_package_search_request_path(from_airport:, to_airport:, from_date:, to_date:)
+      from_date = from_date.strftime("%F")
+      to_date   = to_date.strftime("%F")
+      "#{from_date}/#{from_airport}/#{to_airport}/#{to_date}/#{to_airport}/#{from_airport}"
     end
 
   end

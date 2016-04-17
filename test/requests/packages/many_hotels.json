@@ -1,0 +1,292 @@
+{
+    "FlightList": {
+        "Flight": {
+            "FlightIndex": "1",
+            "FlightItinerary": {
+                "FlightLeg": [
+                    {
+                        "FlightDuration": "PT2H10M",
+                        "FlightLegIndex": "1",
+                        "FlightSegment": {
+                            "ArrivalAirportCode": "LHR",
+                            "ArrivalDateTime": "2016-09-07T13:30:00",
+                            "CarrierCode": "BA",
+                            "DepartureAirportCode": "TXL",
+                            "DepartureDateTime": "2016-09-07T12:20:00",
+                            "FlightDuration": "PT2H10M",
+                            "FlightNumber": "983",
+                            "FlightSegmentIndex": "1"
+                        }
+                    },
+                    {
+                        "FlightDuration": "PT1H50M",
+                        "FlightLegIndex": "2",
+                        "FlightSegment": {
+                            "ArrivalAirportCode": "TXL",
+                            "ArrivalDateTime": "2016-09-15T21:55:00",
+                            "CarrierCode": "BA",
+                            "DepartureAirportCode": "LHR",
+                            "DepartureDateTime": "2016-09-15T19:05:00",
+                            "FlightDuration": "PT1H50M",
+                            "FlightNumber": "988",
+                            "FlightSegmentIndex": "1"
+                        }
+                    }
+                ]
+            },
+            "FlightPrice": {
+                "BaseRate": {
+                    "Currency": "EUR",
+                    "Value": "86.00"
+                },
+                "TaxesAndFees": {
+                    "Currency": "EUR",
+                    "Value": "164.98"
+                },
+                "TotalRate": {
+                    "Currency": "EUR",
+                    "Value": "250.98"
+                }
+            },
+            "TicketsRemaining": "5"
+        }
+    },
+    "HotelList": {
+        "CheckInDate": "2016-09-07",
+        "CheckOutDate": "2016-09-15",
+        "Hotel": [
+            {
+                "Description": "Dank der ausgezeichneten Lage (West End) ist dieses Hotel im luxuri\u00f6sen Stil zu Fu\u00df gerade mal 5 Minuten entfernt von: Benjamin Franklin House, Nelsons\u00e4ule und St. Martin-in-the-Fields. Ebenfalls nur 10 Minuten entfernt: Trafalgar Square und Big Ben. ",
+                "HotelID": "3849185",
+                "HotelIndex": "1",
+                "HotelPrice": {
+                    "TotalRate": {
+                        "Currency": "EUR",
+                        "Value": "5016.72"
+                    }
+                },
+                "Location": {
+                    "City": "London",
+                    "Country": "GBR",
+                    "GeoLocation": {
+                        "Latitude": "51.506841",
+                        "Longitude": "-0.12435"
+                    },
+                    "Province": "England",
+                    "StreetAddress": "Whitehall Place "
+                },
+                "Name": "Corinthia Hotel London",
+                "OverviewThumbnail": "https://images.trvl-media.com/hotels/4000000/3850000/3849200/3849185/3849185_108_t.jpg",
+                "Promotion": {
+                    "Amount": {
+                        "Currency": "EUR",
+                        "Value": "2150.00"
+                    },
+                    "Description": "Jetzt buchen und sparen"
+                },
+                "RoomAmenityList": {
+                    "RoomAmenity": {
+                        "ID": "2048",
+                        "Name": "Kostenloses WLAN"
+                    }
+                },
+                "RoomRatePlanDescription": "Superior-Zimmer, 1\u00a0King-Bett, zum Innenhof hin",
+                "RoomsRemaining": "34",
+                "StarRating": "5.0",
+                "TravelerReviewCount": "123",
+                "TravelerReviewRating": "4.9"
+            },
+            {
+                "Description": "Dank der ausgezeichneten Lage (London Borough of Hammersmith and Fulham) ist dieses Hotel mit dem Schwerpunkt auf Umweltfreundlichkeit und Nachhaltigkeit zu Fu\u00df nur 15 Minuten entfernt von: O2 Shepherd's Bush Empire und Westfield Shopping Centre. Ebenfalls nur 3 km entfernt: Hammersmith Apollo und Portobello Road Market. ",
+                "HotelID": "7049006",
+                "HotelIndex": "2",
+                "HotelPrice": {
+                    "TotalRate": {
+                        "Currency": "EUR",
+                        "Value": "1585.44"
+                    }
+                },
+                "Location": {
+                    "City": "London",
+                    "Country": "GBR",
+                    "GeoLocation": {
+                        "Latitude": "51.503997",
+                        "Longitude": "-0.224204"
+                    },
+                    "Province": "England",
+                    "StreetAddress": "58 Shepherds Bush Green "
+                },
+                "Name": "Dorsett Shepherds Bush",
+                "OverviewThumbnail": "https://images.trvl-media.com/hotels/8000000/7050000/7049100/7049006/7049006_42_t.jpg",
+                "RoomAmenityList": {
+                    "RoomAmenity": {
+                        "ID": "2048",
+                        "Name": "Kostenloses WLAN"
+                    }
+                },
+                "RoomRatePlanDescription": "Standard-Doppelzimmer",
+                "RoomsRemaining": "133",
+                "StarRating": "4.0",
+                "TravelerReviewCount": "1",
+                "TravelerReviewRating": "2.0"
+            },
+            {
+                "Description": "Dieses strahlende Hotel befindet sich drei Stra\u00dfen entfernt von Londons Hyde Park und nur 1,5 km\u00a0entfernt von der Oxford Street und dem Victoria & Albert Museum. Knightsbridge befindet sich 2,5\u00a0km entfernt.",
+                "HotelID": "28126",
+                "HotelIndex": "3",
+                "HotelPrice": {
+                    "BaseRate": {
+                        "Currency": "EUR",
+                        "Value": "1558.63"
+                    },
+                    "TaxRcAndFees": {
+                        "Currency": "EUR",
+                        "Value": "311.74"
+                    },
+                    "TotalRate": {
+                        "Currency": "EUR",
+                        "Value": "1870.37"
+                    }
+                },
+                "Location": {
+                    "City": "London",
+                    "Country": "GBR",
+                    "GeoLocation": {
+                        "Latitude": "51.513538",
+                        "Longitude": "-0.182624"
+                    },
+                    "Province": "England",
+                    "StreetAddress": "26-33 Queens Gardens Hyde Park"
+                },
+                "Name": "Caesar Hotel",
+                "OverviewThumbnail": "https://images.trvl-media.com/hotels/1000000/30000/28200/28126/28126_93_t.jpg",
+                "Promotion": {
+                    "Amount": {
+                        "Currency": "EUR",
+                        "Value": "145.34"
+                    },
+                    "Description": "Fr\u00fch buchen und sparen (on select nights)"
+                },
+                "RoomAmenityList": {
+                    "RoomAmenity": {
+                        "ID": "2048",
+                        "Name": "Kostenloses WLAN"
+                    }
+                },
+                "RoomRatePlanDescription": "Standardzimmer",
+                "RoomsRemaining": "51",
+                "StarRating": "4.0",
+                "TravelerReviewCount": "822",
+                "TravelerReviewRating": "3.9"
+            },
+            {
+                "Description": "Das auff\u00e4llig gestaltete Boutique Hotel befindet sich im Theaterviertel West End, gleich neben dem London Coliseum, wo das Ensemble der English National Opera spielt. Covent Garden und der Trafalgar Square sind nur einen kurzen Spaziergang entfernt.  ",
+                "HotelID": "470865",
+                "HotelIndex": "4",
+                "HotelPrice": {
+                    "BaseRate": {
+                        "Currency": "EUR",
+                        "Value": "2969.42"
+                    },
+                    "TaxRcAndFees": {
+                        "Currency": "EUR",
+                        "Value": "593.88"
+                    },
+                    "TotalRate": {
+                        "Currency": "EUR",
+                        "Value": "3563.30"
+                    }
+                },
+                "Location": {
+                    "City": "London",
+                    "Country": "GBR",
+                    "GeoLocation": {
+                        "Latitude": "51.510409",
+                        "Longitude": "-0.12697"
+                    },
+                    "Province": "England",
+                    "StreetAddress": "45 St Martin's Lane "
+                },
+                "Name": "St Martins Lane",
+                "OverviewThumbnail": "https://images.trvl-media.com/hotels/1000000/480000/470900/470865/470865_201_t.jpg",
+                "RoomRatePlanDescription": "Standardzimmer, 1 Queen-Bett",
+                "RoomsRemaining": "86",
+                "StarRating": "5.0",
+                "TravelerReviewCount": "237",
+                "TravelerReviewRating": "4.3"
+            }
+        ]
+    },
+    "PackageSearchResultList": {
+        "PackageSearchResult": [
+            {
+                "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=e7ecc5fb-3e94-4e1f-a671-fbc33dad8609-0&nRooms=1&nAdults=R1:2&departTLA=L1:BER|L2:LHR&arrivalTLA=L1:LHR|L2:BER&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=800051&price=5162.26&currencyCode=EUR",
+                "FlightReferenceIndex": "1",
+                "HotelReferenceIndex": "1",
+                "PackagePrice": {
+                    "TotalPrice": {
+                        "Currency": "EUR",
+                        "Value": "5162.26"
+                    },
+                    "TotalSavings": {
+                        "Currency": "EUR",
+                        "Value": "105.44"
+                    }
+                }
+            },
+            {
+                "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=e7ecc5fb-3e94-4e1f-a671-fbc33dad8609-1&nRooms=1&nAdults=R1:2&departTLA=L1:BER|L2:LHR&arrivalTLA=L1:LHR|L2:BER&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=6054500&price=1744.95&currencyCode=EUR",
+                "FlightReferenceIndex": "1",
+                "HotelReferenceIndex": "2",
+                "PackagePrice": {
+                    "TotalPrice": {
+                        "Currency": "EUR",
+                        "Value": "1744.95"
+                    },
+                    "TotalSavings": {
+                        "Currency": "EUR",
+                        "Value": "91.47"
+                    }
+                }
+            },
+            {
+                "BrandedDealsMarker": {
+                    "BrandedDealsType": [
+                        "FlightDeal",
+                        "FreeFlight",
+                        "FreeOneNightHotel",
+                        "HotelSavingsFreeNights"
+                    ]
+                },
+                "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=e7ecc5fb-3e94-4e1f-a671-fbc33dad8609-2&nRooms=1&nAdults=R1:2&departTLA=L1:BER|L2:LHR&arrivalTLA=L1:LHR|L2:BER&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=800049&price=1748.61&currencyCode=EUR",
+                "FlightReferenceIndex": "1",
+                "HotelReferenceIndex": "3",
+                "PackagePrice": {
+                    "TotalPrice": {
+                        "Currency": "EUR",
+                        "Value": "1748.61"
+                    },
+                    "TotalSavings": {
+                        "Currency": "EUR",
+                        "Value": "372.74"
+                    }
+                }
+            },
+            {
+                "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=e7ecc5fb-3e94-4e1f-a671-fbc33dad8609-3&nRooms=1&nAdults=R1:2&departTLA=L1:BER|L2:LHR&arrivalTLA=L1:LHR|L2:BER&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=6054504&price=3734.55&currencyCode=EUR",
+                "FlightReferenceIndex": "1",
+                "HotelReferenceIndex": "4",
+                "PackagePrice": {
+                    "TotalPrice": {
+                        "Currency": "EUR",
+                        "Value": "3734.55"
+                    },
+                    "TotalSavings": {
+                        "Currency": "EUR",
+                        "Value": "79.73"
+                    }
+                }
+            }
+        ]
+    }
+}

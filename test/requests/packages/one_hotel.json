@@ -1,0 +1,116 @@
+{
+    "FlightList": {
+        "Flight": {
+            "FlightIndex": "1",
+            "FlightItinerary": {
+                "FlightLeg": [
+                    {
+                        "FlightDuration": "PT2H10M",
+                        "FlightLegIndex": "1",
+                        "FlightSegment": {
+                            "ArrivalAirportCode": "LHR",
+                            "ArrivalDateTime": "2016-09-07T13:30:00",
+                            "CarrierCode": "BA",
+                            "DepartureAirportCode": "TXL",
+                            "DepartureDateTime": "2016-09-07T12:20:00",
+                            "FlightDuration": "PT2H10M",
+                            "FlightNumber": "983",
+                            "FlightSegmentIndex": "1"
+                        }
+                    },
+                    {
+                        "FlightDuration": "PT1H50M",
+                        "FlightLegIndex": "2",
+                        "FlightSegment": {
+                            "ArrivalAirportCode": "TXL",
+                            "ArrivalDateTime": "2016-09-15T21:55:00",
+                            "CarrierCode": "BA",
+                            "DepartureAirportCode": "LHR",
+                            "DepartureDateTime": "2016-09-15T19:05:00",
+                            "FlightDuration": "PT1H50M",
+                            "FlightNumber": "988",
+                            "FlightSegmentIndex": "1"
+                        }
+                    }
+                ]
+            },
+            "FlightPrice": {
+                "BaseRate": {
+                    "Currency": "EUR",
+                    "Value": "86.00"
+                },
+                "TaxesAndFees": {
+                    "Currency": "EUR",
+                    "Value": "164.98"
+                },
+                "TotalRate": {
+                    "Currency": "EUR",
+                    "Value": "250.98"
+                }
+            },
+            "TicketsRemaining": "5"
+        }
+    },
+    "HotelList": {
+        "CheckInDate": "2016-09-07",
+        "CheckOutDate": "2016-09-15",
+        "Hotel": {
+            "Description": "Dank der ausgezeichneten Lage (West End) ist dieses Hotel im luxuri\u00f6sen Stil zu Fu\u00df gerade mal 5 Minuten entfernt von: Benjamin Franklin House, Nelsons\u00e4ule und St. Martin-in-the-Fields. Ebenfalls nur 10 Minuten entfernt: Trafalgar Square und Big Ben. ",
+            "HotelID": "3849185",
+            "HotelIndex": "1",
+            "HotelPrice": {
+                "TotalRate": {
+                    "Currency": "EUR",
+                    "Value": "5016.72"
+                }
+            },
+            "Location": {
+                "City": "London",
+                "Country": "GBR",
+                "GeoLocation": {
+                    "Latitude": "51.506841",
+                    "Longitude": "-0.12435"
+                },
+                "Province": "England",
+                "StreetAddress": "Whitehall Place "
+            },
+            "Name": "Corinthia Hotel London",
+            "OverviewThumbnail": "https://images.trvl-media.com/hotels/4000000/3850000/3849200/3849185/3849185_108_t.jpg",
+            "Promotion": {
+                "Amount": {
+                    "Currency": "EUR",
+                    "Value": "2150.00"
+                },
+                "Description": "Jetzt buchen und sparen"
+            },
+            "RoomAmenityList": {
+                "RoomAmenity": {
+                    "ID": "2048",
+                    "Name": "Kostenloses WLAN"
+                }
+            },
+            "RoomRatePlanDescription": "Superior-Zimmer, 1\u00a0King-Bett, zum Innenhof hin",
+            "RoomsRemaining": "34",
+            "StarRating": "5.0",
+            "TravelerReviewCount": "123",
+            "TravelerReviewRating": "4.9"
+        }
+    },
+    "PackageSearchResultList": {
+        "PackageSearchResult": {
+            "DetailsUrl": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=030bad8d-b47a-46ad-bc9f-c3f55703d8f6-0&nRooms=1&nAdults=R1:2&departTLA=L1:BER|L2:LHR&arrivalTLA=L1:LHR|L2:BER&departDate=L1:2016-09-07|L2:2016-09-15&tripType=roundtrip&productType=package&serviceVersion=3&destinationId=800051&price=5162.26&currencyCode=EUR",
+            "FlightReferenceIndex": "1",
+            "HotelReferenceIndex": "1",
+            "PackagePrice": {
+                "TotalPrice": {
+                    "Currency": "EUR",
+                    "Value": "5162.26"
+                },
+                "TotalSavings": {
+                    "Currency": "EUR",
+                    "Value": "105.44"
+                }
+            }
+        }
+    }
+}
