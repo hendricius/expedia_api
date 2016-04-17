@@ -24,6 +24,9 @@ describe ExpediaApi::ResponseLists::Packages do
   let(:hotels_json) do
     JSON.parse(response_list.response.body).with_indifferent_access[:HotelList][:Hotel]
   end
+  let(:packages_json) do
+    JSON.parse(response_list.response.body).with_indifferent_access[:PackageSearchResultList][:PackageSearchResult]
+  end
 
   describe "#test_data" do
     it "is a list" do
@@ -54,6 +57,28 @@ describe ExpediaApi::ResponseLists::Packages do
     end
     it "returns an array array of hotels" do
       assert_equal ExpediaApi::Entities::PackageHotel, sample_hotel_entity.class
+    end
+  end
+
+  describe "#extract_hotels" do
+    let(:hotels) { response_list.extract_hotels(hotels_json) }
+    let(:flights) { response_list.extract_flights(flights_json) }
+    let(:sample_packages) do
+      response_list.extract_packages(packages_json, hotels: hotels, flights: flights)
+    end
+    it "receives both hotels and flights" do
+      assert_raises ArgumentError do
+        response_list.extract_packages({})
+      end
+    end
+    it "returns an array of packages" do
+      assert_equal ExpediaApi::Entities::Package, sample_packages.first.class
+    end
+    it "associates hotels with each package" do
+      assert_equal true, sample_packages.all? {|p| p.hotel.class == ExpediaApi::Entities::PackageHotel }
+    end
+    it "associates flights with each package" do
+      assert_equal true, sample_packages.all? {|p| p.flight.class == ExpediaApi::Entities::PackageFlight }
     end
   end
 end

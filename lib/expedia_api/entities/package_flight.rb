@@ -8,7 +8,7 @@ module ExpediaApi
       end
 
       def index
-        raw_data[:FlightIndex]
+        raw_data[:FlightIndex].to_i
       end
 
       def flight_legs

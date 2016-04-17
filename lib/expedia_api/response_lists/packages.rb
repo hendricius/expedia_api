@@ -3,11 +3,7 @@ module ExpediaApi
     class Packages < BaseResponseList
 
       def entries=(entries)
-        if entries
-          @entries = entries.map {|e| ExpediaApi::Entities::PackageEntity.new(e.with_indifferent_access) }
-        else
-          @entries = []
-        end
+        @entries = entries
       end
 
       def extract_entries_from_response(response)
@@ -20,19 +16,29 @@ module ExpediaApi
         packages
       end
 
+      # returns flights for each of the entries
       def extract_flights(flights_json)
         # right now only 1 flight
         [ExpediaApi::Entities::PackageFlight.new(flights_json)]
       end
 
+      # returns hotels for each hotel in the json
       def extract_hotels(hotels_json)
         hotels_json.map do |hotel|
           ExpediaApi::Entities::PackageHotel.new(hotel)
         end
       end
 
-      # todo implement me
-      def extract_packages(json, flights: [], hotels: [])
+      # returns packages for each of the json data
+      def extract_packages(json, flights:, hotels:)
+        flights_by_index = flights.map {|flight| [flight.index, flight]}.to_h
+        hotels_by_index  = hotels.map {|hotel| [hotel.index, hotel]}.to_h
+        json.map do |package|
+          entity = ExpediaApi::Entities::Package.new(package)
+          entity.flight = flights_by_index[entity.flight_index]
+          entity.hotel  = hotels_by_index[entity.hotel_index]
+          entity
+        end
       end
     end
 
