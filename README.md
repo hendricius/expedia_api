@@ -1,5 +1,7 @@
 # Expedia Api
 
+[![Build Status](https://travis-ci.org/hendricius/expedia_api.svg?branch=master)](https://travis-ci.org/hendricius/expedia_api)
+
 This is a ruby wrapper for the official Expedia.com API. Please note that the Expedia.com API is a different than the one provided by the Expedia Affiliate Network. They are different companies. If you want to use the EAN Api please use [expedia gem](https://github.com/zaidakram/expedia).
 
 
