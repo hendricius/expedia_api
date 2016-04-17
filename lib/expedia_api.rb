@@ -2,6 +2,7 @@ require 'json'
 require 'faraday'
 require 'faraday_middleware'
 require 'active_support/core_ext/hash/indifferent_access'
+require 'money'
 
 require "expedia_api/version"
 require "expedia_api/http_service"
