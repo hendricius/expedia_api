@@ -91,19 +91,24 @@ module ExpediaApi
     end
 
     def search_packages(hotel_ids: [], region_ids: [], from_date:, to_date:, from_airport:, to_airport:, other_options: {})
+      # convert/validate the parameters. the api expects a comma separated
+      # string.
+      hotel_ids  = hotel_ids.join(",") if hotel_ids.is_a?(Array) && hotel_ids.any?
+      region_ids = region_ids.join(",") if region_ids.is_a?(Array) && region_ids.any?
       validate_package_arguments({hotel_ids: hotel_ids, region_ids: region_ids})
-      parameters = {}
+      parameters = {}.merge(other_options)
       parameters[:hotelids]  = hotel_ids   if hotel_ids.length
       parameters[:regionids] = region_ids  if region_ids.length
+      # build the url for the request to match the specifications
       path_uri = build_package_search_request_path(from_airport: from_airport, to_airport: to_airport, from_date: from_date, to_date: to_date)
       base_uri = "/wsapi/rest/package/v1/search"
       full_uri = "#{base_uri}/#{path_uri}"
       data = request(parameters: parameters, uri: full_uri)
       ExpediaApi::ResponseLists::Packages.new(response: data)
     rescue Faraday::ParsingError => e
-      ExpediaApi::PackageResponseList.new(exception: e)
+      ExpediaApi::ResponseLists::Packages.new(exception: e)
     rescue Faraday::ConnectionFailed => e
-      ExpediaApi::PackageResponseList.new(exception: e)
+      ExpediaApi::ResponseLists::Packages.new(exception: e)
     end
 
     private

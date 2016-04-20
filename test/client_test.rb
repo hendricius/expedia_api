@@ -71,7 +71,7 @@ describe ExpediaApi::Client do
       end
     end
     it "returns a package response list do" do
-      stub_request(:get, "http://ews.expedia.com/wsapi/rest/package/v1/search/2016-09-07/HAM/SYD/2016-09-15/SYD/HAM?format=json&hotelids%5B%5D=1337&key=test").
+      stub_request(:get, "http://ews.expedia.com/wsapi/rest/package/v1/search/2016-09-07/HAM/SYD/2016-09-15/SYD/HAM?format=json&hotelids=1337&key=test").
         to_return(:status => 200, :body => ResponseMocks.package_search_multiple_stops_many_hotels.to_json, :headers => {})
 
       data = client.search_packages(sample_arguments)
