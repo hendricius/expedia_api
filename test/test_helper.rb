@@ -5,3 +5,5 @@ require 'minitest/spec'
 require 'minitest/autorun'
 require 'webmock/minitest'
 require 'pry'
+
+ExpediaApi.api_key = "test"
