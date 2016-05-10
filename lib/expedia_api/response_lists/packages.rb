@@ -24,8 +24,12 @@ module ExpediaApi
 
       # returns hotels for each hotel in the json
       def extract_hotels(hotels_json)
-        hotels_json.map do |hotel|
-          ExpediaApi::Entities::PackageHotel.new(hotel)
+        if hotels_json.is_a?(Array)
+          hotels_json.map do |hotel|
+            ExpediaApi::Entities::PackageHotel.new(hotel)
+          end
+        else
+          [ExpediaApi::Entities::PackageHotel.new(hotels_json)]
         end
       end
 
@@ -33,6 +37,8 @@ module ExpediaApi
       def extract_packages(json, flights:, hotels:)
         flights_by_index = flights.map {|flight| [flight.index, flight]}.to_h
         hotels_by_index  = hotels.map {|hotel| [hotel.index, hotel]}.to_h
+        # if only one package is returned, we just get a hash, no array.
+        json = [json] if json.is_a?(Hash)
         json.map do |package|
           entity = ExpediaApi::Entities::Package.new(package)
           entity.flight = flights_by_index[entity.flight_index]
