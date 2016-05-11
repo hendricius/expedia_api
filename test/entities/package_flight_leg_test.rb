@@ -3,40 +3,40 @@ require 'test_helper'
 describe ExpediaApi::Entities::PackageFlightLeg do
   let(:raw_json) do
     {
-        "FlightDuration": "PT21H50M",
-        "FlightLegIndex": "1",
-        "FlightSegment": [
-            {
-                "ArrivalAirportCode": "DUS",
-                "ArrivalDateTime": "2016-09-07T08:30:00",
-                "CarrierCode": "AB",
-                "DepartureAirportCode": "HAM",
-                "DepartureDateTime": "2016-09-07T07:30:00",
-                "FlightDuration": "PT1H0M",
-                "FlightNumber": "6743",
-                "FlightSegmentIndex": "1"
-            },
-            {
-                "ArrivalAirportCode": "AUH",
-                "ArrivalDateTime": "2016-09-07T20:20:00",
-                "CarrierCode": "AB",
-                "DepartureAirportCode": "DUS",
-                "DepartureDateTime": "2016-09-07T11:30:00",
-                "FlightDuration": "PT6H50M",
-                "FlightNumber": "4008",
-                "FlightSegmentIndex": "2"
-            },
-            {
-                "ArrivalAirportCode": "SYD",
-                "ArrivalDateTime": "2016-09-08T17:55:00",
-                "CarrierCode": "AB",
-                "DepartureAirportCode": "AUH",
-                "DepartureDateTime": "2016-09-07T21:55:00",
-                "FlightDuration": "PT14H0M",
-                "FlightNumber": "4070",
-                "FlightSegmentIndex": "3"
-            }
-        ]
+      "FlightDuration": "PT21H50M",
+      "FlightLegIndex": "1",
+      "FlightSegment": [
+        {
+          "ArrivalAirportCode": "DUS",
+          "ArrivalDateTime": "2016-09-07T08:30:00",
+          "CarrierCode": "AB",
+          "DepartureAirportCode": "HAM",
+          "DepartureDateTime": "2016-09-07T07:30:00",
+          "FlightDuration": "PT1H0M",
+          "FlightNumber": "6743",
+          "FlightSegmentIndex": "1"
+        },
+        {
+          "ArrivalAirportCode": "AUH",
+          "ArrivalDateTime": "2016-09-07T20:20:00",
+          "CarrierCode": "AB",
+          "DepartureAirportCode": "DUS",
+          "DepartureDateTime": "2016-09-07T11:30:00",
+          "FlightDuration": "PT6H50M",
+          "FlightNumber": "4008",
+          "FlightSegmentIndex": "2"
+        },
+        {
+          "ArrivalAirportCode": "SYD",
+          "ArrivalDateTime": "2016-09-08T17:55:00",
+          "CarrierCode": "AB",
+          "DepartureAirportCode": "AUH",
+          "DepartureDateTime": "2016-09-07T21:55:00",
+          "FlightDuration": "PT14H0M",
+          "FlightNumber": "4070",
+          "FlightSegmentIndex": "3"
+        }
+      ]
     }.with_indifferent_access
   end
 
