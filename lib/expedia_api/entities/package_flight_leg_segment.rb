@@ -15,8 +15,11 @@ module ExpediaApi
     # }
     class PackageFlightLegSegment
 
+      attr_accessor :sibling_segments
+
       def initialize(raw_data)
-        @raw_data = raw_data || {}
+        @raw_data         = raw_data || {}
+        @sibling_segments = []
       end
 
       # returns a departure datetime for the departure time of the segment
@@ -51,7 +54,7 @@ module ExpediaApi
 
       # returns the time between this segment and the next one.
       def stay_duration_seconds
-        0
+        return 0 if is_last_segment_of_flight?
       end
 
       # returns the duration how long the segment takes. returns 0 if it can
@@ -85,6 +88,24 @@ module ExpediaApi
       # returns the flight number of the flight
       def flight_number
         @raw_data[:FlightNumber]
+      end
+
+      # returns true if it is the last segment of the flight
+      def is_last_segment_of_flight?
+        return true if sibling_segments.empty?
+        sibling_segments.sort_by {|segment| segment.index }.reverse.first == self
+      end
+
+      # returns true if it is the first segment of the flight
+      def is_first_segment_of_flight?
+        return true if sibling_segments.empty?
+        sibling_segments.sort_by {|segment| segment.index }.first == self
+      end
+
+      # returns the next segment followed by this segment
+      def next_segment
+        return nil if sibling_segments.empty?
+        sibling_segments[sibling_segments.sort_by(&:index).index(self) + 1]
       end
     end
   end

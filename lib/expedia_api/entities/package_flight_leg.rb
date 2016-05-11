@@ -48,9 +48,13 @@ module ExpediaApi
       # returns the flight segments of the flight
       def segments
         @segments ||= begin
-          extract_segments.map do |segment|
+          segments = extract_segments.map do |segment|
             PackageFlightLegSegment.new(segment)
           end
+          segments.each do |segment|
+            segment.sibling_segments = segments
+          end
+          segments
         end
       end
 
