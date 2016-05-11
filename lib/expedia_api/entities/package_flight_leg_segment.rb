@@ -54,7 +54,10 @@ module ExpediaApi
 
       # returns the time between this segment and the next one.
       def stay_duration_seconds
-        return 0 if is_last_segment_of_flight?
+        return 0 unless next_segment
+        # when we arrive at the next airport, minus when we arrived at this
+        # airport.
+        (next_segment.departure_time.to_time - arrival_time.to_time).to_i
       end
 
       # returns the duration how long the segment takes. returns 0 if it can

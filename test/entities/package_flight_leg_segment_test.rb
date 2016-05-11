@@ -7,7 +7,7 @@ describe ExpediaApi::Entities::PackageFlightLegSegment do
       "DepartureAirportCode"=>"SAW",
       "ArrivalAirportCode"=>"DXB",
       "DepartureDateTime"=>"2016-05-31T21:45:00",
-      "ArrivalDateTime"=>"2016-06-01T03:20:00",
+      "ArrivalDateTime"=>"2016-06-01T02:00:00",
       "CarrierCode"=>"PC",
       "FlightNumber"=>"5660",
       "FlightDuration"=>"PT4H35M"
@@ -18,7 +18,7 @@ describe ExpediaApi::Entities::PackageFlightLegSegment do
       "FlightSegmentIndex"=>"2",
       "DepartureAirportCode"=>"SAW",
       "ArrivalAirportCode"=>"DXB",
-      "DepartureDateTime"=>"2016-05-31T21:45:00",
+      "DepartureDateTime"=>"2016-06-01T03:00:00",
       "ArrivalDateTime"=>"2016-06-01T03:20:00",
       "CarrierCode"=>"PC",
       "FlightNumber"=>"5660",
@@ -72,8 +72,10 @@ describe ExpediaApi::Entities::PackageFlightLegSegment do
   end
 
   describe "#stay_duration_seconds" do
-    it "returns stay_duration_seconds" do
-      skip
+    it "returns the previous segment" do
+      entity.sibling_segments     = [entity, entity_two]
+      assert_equal 3600, entity.stay_duration_seconds
+      assert_equal 0, entity_two.stay_duration_seconds
     end
   end
 
