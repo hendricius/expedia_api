@@ -107,6 +107,17 @@ module ExpediaApi
         return nil if sibling_segments.empty?
         sibling_segments[sibling_segments.sort_by(&:index).index(self) + 1]
       end
+
+      # returns the previous segment preceeded by this segment
+      def previous_segment
+        return nil if sibling_segments.empty?
+        index = sibling_segments.sort_by(&:index).index(self)
+        if index && index >= 1
+          sibling_segments[index - 1]
+        else
+          nil
+        end
+      end
     end
   end
 end

@@ -122,5 +122,19 @@ describe ExpediaApi::Entities::PackageFlightLegSegment do
     end
   end
 
+  describe "#previous_segment" do
+    it "returns the previous segment" do
+      entity.sibling_segments     = [entity, entity_two]
+      entity_two.sibling_segments = [entity, entity_two]
+      assert_equal entity, entity_two.previous_segment
+    end
+
+    it "returns nil if there are no segments" do
+      entity.sibling_segments     = [entity, entity_two]
+      entity_two.sibling_segments = [entity, entity_two]
+      assert_equal nil, entity.previous_segment
+    end
+  end
+
 
 end
