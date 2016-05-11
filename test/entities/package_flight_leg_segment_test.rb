@@ -1,6 +1,6 @@
 require 'test_helper'
 
-describe ExpediaApi::Entities::PackageHotel do
+describe ExpediaApi::Entities::PackageFlightLegSegment do
   let(:raw_json) do
     {
       "FlightSegmentIndex"=>"2",
