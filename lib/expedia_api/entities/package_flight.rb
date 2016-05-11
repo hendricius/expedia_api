@@ -1,47 +1,27 @@
 module ExpediaApi
   module Entities
     class PackageFlight
-      attr_reader :raw_data
-
       def initialize(raw_data)
         @raw_data = raw_data || {}
       end
 
+      # returns the flight identifier for the given flight.
       def index
-        raw_data[:FlightIndex].to_i
+        @raw_data[:FlightIndex].to_i
       end
 
+      # returns an array of flight legs for the given flight
       def flight_legs
         extract_flightlegs.map do |leg|
-          FlightLeg.new(leg)
+          PackageFlightLeg.new(leg)
         end
       end
 
+      # extracts the json of the flight legs from the data.
       def extract_flightlegs
-        raw_data.fetch(:FlightItinerary, {}).fetch(:FlightLeg, {})
+        @raw_data.fetch(:FlightItinerary, {}).fetch(:FlightLeg, {})
       end
 
-      class FlightLeg
-        def initialize(raw_data)
-          @raw_data = raw_data || {}
-        end
-
-        def segments
-          extract_segments.map do |segment|
-            FlightLegSegment.new(segment)
-          end
-        end
-
-        def extract_segments
-          @raw_data[:FlightSegment] || []
-        end
-      end
-
-      class FlightLegSegment
-        def initialize(raw_data)
-          @raw_data = raw_data || {}
-        end
-      end
     end
   end
 end
