@@ -10,6 +10,16 @@ module ExpediaApi
       def index
         raw_data[:HotelIndex].to_i
       end
+
+      # returns the hotel id
+      def id
+        raw_data[:HotelID].to_i
+      end
+
+      # returns the name of the hotel
+      def name
+        raw_data[:Name]
+      end
     end
   end
 end
