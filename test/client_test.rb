@@ -90,4 +90,39 @@ describe ExpediaApi::Client do
       assert_equal "2016-09-07/HAM/SYD/2016-09-15/SYD/HAM", client.send(:build_package_search_request_path, arguments)
     end
   end
+
+ describe "#search_flights" do
+    let(:sample_arguments) do
+      {
+        from_date: Date.parse("2016-09-07"),
+        to_date: Date.parse("2016-09-15"),
+        from_airport: "TXL",
+        to_airport: "BOB",
+      }
+    end
+    it "raises an ArgumentError if invalid parameters are passed" do
+      assert_raises ArgumentError do
+         client.search_flights
+      end
+    end
+    it "returns a flights response list" do
+      stub_request(:get, "http://ews.expedia.com/xmlapi/rest/air/v2/airsearch/2016-09-07/TXL/BOB/2016-09-15/BOB/TXL?format=json&adult=1&key=test").
+        to_return(:status => 200, :body => ResponseMocks.flights_list.to_json, :headers => {})
+
+      data = client.search_flights(sample_arguments)
+      assert_equal ExpediaApi::ResponseLists::Flights, data.class
+    end
+  end
+
+  describe "#build_flight_search_request_path" do
+    it "returns the path" do
+      arguments = {
+        from_date: Date.parse("2016-09-07"),
+        to_date: Date.parse("2016-09-15"),
+        from_airport: "HAM",
+        to_airport: "SYD"
+      }
+      assert_equal "2016-09-07/HAM/SYD/2016-09-15/SYD/HAM", client.send(:build_flight_search_request_path, arguments)
+    end
+  end
 end

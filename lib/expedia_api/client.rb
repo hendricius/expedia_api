@@ -90,6 +90,21 @@ module ExpediaApi
       ExpediaApi::ResponseLists::Hotels.new(exception: e)
     end
 
+    def search_flights(from_date:, to_date:, from_airport:, to_airport:, other_options: {})
+      parameters = {adult:1}.merge(other_options)
+      path_uri = build_package_search_request_path(from_airport: from_airport, to_airport: to_airport, from_date: from_date, to_date: to_date)
+      # build the url for the request to match the specifications
+      path_uri = build_flight_search_request_path(from_airport: from_airport, to_airport: to_airport, from_date: from_date, to_date: to_date)
+      base_uri = "/xmlapi/rest/air/v2/airsearch"
+      full_uri = "#{base_uri}/#{path_uri}"
+      data = request(parameters: parameters, uri: full_uri)
+      ExpediaApi::ResponseLists::Flights.new(response: data)
+    rescue Faraday::ParsingError => e
+      ExpediaApi::ResponseLists::Flights.new(exception: e)
+    rescue Faraday::ConnectionFailed => e
+      ExpediaApi::ResponseLists::Flights.new(exception: e)
+    end
+
     def search_packages(hotel_ids: [], region_ids: [], from_date:, to_date:, from_airport:, to_airport:, other_options: {})
       # convert/validate the parameters. the api expects a comma separated
       # string.
@@ -130,5 +145,10 @@ module ExpediaApi
       "#{from_date}/#{from_airport}/#{to_airport}/#{to_date}/#{to_airport}/#{from_airport}"
     end
 
+    def build_flight_search_request_path(from_airport:, to_airport:, from_date:, to_date:)
+      from_date = from_date.strftime("%F")
+      to_date   = to_date.strftime("%F")
+      "#{from_date}/#{from_airport}/#{to_airport}/#{to_date}/#{to_airport}/#{from_airport}"
+    end
   end
 end
