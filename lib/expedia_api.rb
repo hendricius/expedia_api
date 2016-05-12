@@ -18,6 +18,7 @@ require "expedia_api/response_lists"
 require "expedia_api/response_lists/base_response_list"
 require "expedia_api/response_lists/packages"
 require "expedia_api/response_lists/hotels"
+require "expedia_api/response_lists/flights"
 
 module ExpediaApi
   class << self
