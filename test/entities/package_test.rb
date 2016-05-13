@@ -64,5 +64,12 @@ describe ExpediaApi::Entities::Package do
     end
   end
 
+  describe "#details_url" do
+    it "returns a url if there is one present" do
+      entity.raw_data[:DetailsUrl] = "http://foo"
+      assert_equal "http://foo", entity.details_url
+    end
+  end
+
 
 end

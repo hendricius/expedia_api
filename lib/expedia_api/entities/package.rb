@@ -33,6 +33,11 @@ module ExpediaApi
           nil
         end
       end
+
+      # returns the details url for the package
+      def details_url
+        raw_data[:DetailsUrl]
+      end
     end
   end
 end
