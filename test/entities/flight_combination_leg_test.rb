@@ -89,7 +89,7 @@ describe ExpediaApi::Entities::FlightCombinationLeg do
 
   describe "#segments" do
     it "returns an array of segments" do
-      assert_equal true, entity.segments.all? {|s| s.class == ExpediaApi::Entities::PackageFlightLegSegment }
+      assert_equal true, entity.segments.all? {|s| s.class == ExpediaApi::Entities::FlightCombinationLegSegment }
     end
     it "returns 3 segments for the sample data" do
       assert_equal 3, entity.segments.length

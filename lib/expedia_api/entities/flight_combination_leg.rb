@@ -95,7 +95,7 @@ module ExpediaApi
       def segments
         @segments ||= begin
           segments = extract_segments.map do |segment|
-            PackageFlightLegSegment.new(segment)
+            FlightCombinationLegSegment.new(segment)
           end
           segments.each do |segment|
             segment.sibling_segments = segments
