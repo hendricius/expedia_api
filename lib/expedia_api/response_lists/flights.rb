@@ -28,8 +28,6 @@ module ExpediaApi
 
       # returns packages for each of the json data
       def extract_combinations(products_json, outbound_legs:, return_legs:)
-        products_json.first[:PIID]
-        products_json.first[:PriceInformation]
         # combination_pairs, [outbound_leg_id, return_leg_id, raw_data]
         combination_pairs = products_json.map do |json|
           reference_json = json[:AirLegReferenceList][:AirLegReference]
@@ -37,17 +35,20 @@ module ExpediaApi
         end
         outbound_legs_by_index = outbound_legs.map{|leg| [leg.index, leg]}.to_h
         return_legs_by_index   = return_legs.map{|leg| [leg.index, leg]}.to_h
+        cheapest_price = cheapest_combination_price(products_json)
         combination_pairs.map do |outbound_leg_id, return_leg_id, raw_data|
- #       pidd of the combination
- #       total_price
- #       price_difference_to_cheapest_flight
           entity = ExpediaApi::Entities::FlightCombination.new(raw_data)
           entity.outbound_leg = outbound_legs_by_index[outbound_leg_id]
           entity.return_leg   = return_legs_by_index[return_leg_id]
+          entity.cheapest_combination_price = cheapest_price
           entity
         end
       end
-    end
 
+      def cheapest_combination_price(products_json)
+        products_json.min{|p| p[:PriceInformation][:TotalPrice][:Value].to_f}[:PriceInformation][:TotalPrice]
+      end
+
+    end
   end
 end

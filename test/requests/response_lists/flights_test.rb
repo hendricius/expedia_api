@@ -80,4 +80,11 @@ describe ExpediaApi::ResponseLists::Flights do
       assert_equal 8, last_combination.return_leg.index
     end
   end
+
+  describe "#cheapest_combination_price" do
+    it "finds the cheapest price among the different products" do
+      min_price = response_list.cheapest_combination_price(products_json)
+      assert_equal 2684.5, min_price[:Value].to_f
+    end
+  end
 end
