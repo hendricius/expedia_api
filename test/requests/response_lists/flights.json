@@ -1,0 +1,1979 @@
+{
+    "AirLegListCollection": {
+        "AirLegList": [
+            {
+                "AirLeg": [
+                    {
+                        "AirLegIndex": 1,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-07T08:50:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-07T07:00:00+02:00",
+                                    "DepartureLocationCode": "TXL",
+                                    "FlightDuration": "PT1H50M",
+                                    "FlightNumber": "1135",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-07T08:50:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-07T07:00:00+02:00",
+                                                "DepartureLocationCode": "TXL",
+                                                "FlightDuration": "PT1H50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "TN",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-07T22:00:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-07T11:30:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT22H30M",
+                                    "FlightNumber": "7",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "343",
+                                                "ArrivalDateTime": "2016-09-07T22:00:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-07T11:30:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT22H30M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-08T07:35:00-10:00",
+                                    "ArrivalLocationCode": "BOB",
+                                    "DepartureDateTime": "2016-09-08T06:45:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "487",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-08T07:35:00-10:00",
+                                                "ArrivalLocationCode": "BOB",
+                                                "DepartureDateTime": "2016-09-08T06:45:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT36H35M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 2,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-07T19:55:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-07T18:10:00+02:00",
+                                    "DepartureLocationCode": "TXL",
+                                    "FlightDuration": "PT1H45M",
+                                    "FlightNumber": "1835",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-07T19:55:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-07T18:10:00+02:00",
+                                                "DepartureLocationCode": "TXL",
+                                                "FlightDuration": "PT1H45M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-09T05:15:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-08T19:10:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT22H5M",
+                                    "FlightNumber": "76",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "772",
+                                                "ArrivalDateTime": "2016-09-09T05:15:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-08T19:10:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT22H5M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-09T07:50:00-10:00",
+                                    "ArrivalLocationCode": "BOB",
+                                    "DepartureDateTime": "2016-09-09T07:00:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "420",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-09T07:50:00-10:00",
+                                                "ArrivalLocationCode": "BOB",
+                                                "DepartureDateTime": "2016-09-09T07:00:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT49H40M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 3,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-07T19:55:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-07T18:10:00+02:00",
+                                    "DepartureLocationCode": "TXL",
+                                    "FlightDuration": "PT1H45M",
+                                    "FlightNumber": "1835",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-07T19:55:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-07T18:10:00+02:00",
+                                                "DepartureLocationCode": "TXL",
+                                                "FlightDuration": "PT1H45M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-09T05:15:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-08T19:10:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT22H5M",
+                                    "FlightNumber": "76",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "772",
+                                                "ArrivalDateTime": "2016-09-09T05:15:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-08T19:10:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT22H5M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-09T10:35:00-10:00",
+                                    "ArrivalLocationCode": "BOB",
+                                    "DepartureDateTime": "2016-09-09T09:45:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "463",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-09T10:35:00-10:00",
+                                                "ArrivalLocationCode": "BOB",
+                                                "DepartureDateTime": "2016-09-09T09:45:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT52H25M0S",
+                        "TotalStops": 2
+                    }
+                ],
+                "AirLegListIndex": 1
+            },
+            {
+                "AirLeg": [
+                    {
+                        "AirLegIndex": 1,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T19:30:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T18:40:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "404",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T19:30:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T18:40:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "TN",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H31M",
+                                    "FlightNumber": "8",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "343",
+                                                "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H31M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1534",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "321",
+                                                "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT32H0M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 2,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T17:55:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T17:05:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "448",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T17:55:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T17:05:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "TN",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H31M",
+                                    "FlightNumber": "8",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "343",
+                                                "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H31M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1534",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "321",
+                                                "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT33H35M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 3,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T20:00:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T19:10:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "465",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T20:00:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T19:10:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "TN",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H31M",
+                                    "FlightNumber": "8",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "343",
+                                                "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H31M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1534",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "321",
+                                                "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT31H30M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 4,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T19:35:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T18:15:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT1H20M",
+                                    "FlightNumber": "318",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T19:35:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T18:15:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT1H20M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "TN",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H31M",
+                                    "FlightNumber": "8",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "343",
+                                                "ArrivalDateTime": "2016-09-17T09:30:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-15T23:59:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H31M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1534",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "321",
+                                                "ArrivalDateTime": "2016-09-17T14:40:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T13:00:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT32H25M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 5,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T19:35:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T18:15:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT1H20M",
+                                    "FlightNumber": "318",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T19:35:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T18:15:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT1H20M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H30M",
+                                    "FlightNumber": "77",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "772",
+                                                "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H30M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1134",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT40H15M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 6,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T19:30:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T18:40:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "404",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T19:30:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T18:40:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H30M",
+                                    "FlightNumber": "77",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "772",
+                                                "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H30M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1134",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT39H50M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 7,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T17:55:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T17:05:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "448",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T17:55:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T17:05:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H30M",
+                                    "FlightNumber": "77",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "772",
+                                                "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H30M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1134",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT41H25M0S",
+                        "TotalStops": 2
+                    },
+                    {
+                        "AirLegIndex": 8,
+                        "AirSegmentList": {
+                            "AirSegment": [
+                                {
+                                    "AirCarrierCode": "VT",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 1,
+                                    "ArrivalDateTime": "2016-09-15T20:00:00-10:00",
+                                    "ArrivalLocationCode": "PPT",
+                                    "DepartureDateTime": "2016-09-15T19:10:00-10:00",
+                                    "DepartureLocationCode": "BOB",
+                                    "FlightDuration": "PT50M",
+                                    "FlightNumber": "465",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "AT7",
+                                                "ArrivalDateTime": "2016-09-15T20:00:00-10:00",
+                                                "ArrivalLocationCode": "PPT",
+                                                "DepartureDateTime": "2016-09-15T19:10:00-10:00",
+                                                "DepartureLocationCode": "BOB",
+                                                "FlightDuration": "PT50M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 2,
+                                    "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                    "ArrivalLocationCode": "CDG",
+                                    "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                    "DepartureLocationCode": "PPT",
+                                    "FlightDuration": "PT21H30M",
+                                    "FlightNumber": "77",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "772",
+                                                "ArrivalDateTime": "2016-09-17T17:05:00+02:00",
+                                                "ArrivalLocationCode": "CDG",
+                                                "DepartureDateTime": "2016-09-16T07:35:00-10:00",
+                                                "DepartureLocationCode": "PPT",
+                                                "FlightDuration": "PT21H30M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AirCarrierCode": "AF",
+                                    "AirProviderCode": "1",
+                                    "AirSegmentIndex": 3,
+                                    "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                    "ArrivalLocationCode": "TXL",
+                                    "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                    "DepartureLocationCode": "CDG",
+                                    "FlightDuration": "PT1H40M",
+                                    "FlightNumber": "1134",
+                                    "OperationSegmentList": {
+                                        "OperationSegment": [
+                                            {
+                                                "AircraftCode": "320",
+                                                "ArrivalDateTime": "2016-09-17T22:30:00+02:00",
+                                                "ArrivalLocationCode": "TXL",
+                                                "DepartureDateTime": "2016-09-17T20:50:00+02:00",
+                                                "DepartureLocationCode": "CDG",
+                                                "FlightDuration": "PT1H40M",
+                                                "OperationSegmentIndex": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "FlightDuration": "PT39H20M0S",
+                        "TotalStops": 2
+                    }
+                ],
+                "AirLegListIndex": 2
+            }
+        ]
+    },
+    "AirProductList": {
+        "AirProduct": [
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 1,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 1,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 1,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-0-0-1&price=2684.50&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-0-0-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2015.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2684.50"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "669.50"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 1,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 2,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 2,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-0-1-1&price=2684.50&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-0-1-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2015.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2684.50"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "669.50"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 1,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 3,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 3,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-0-2-1&price=2684.50&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-0-2-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2015.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2684.50"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "669.50"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 1,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 4,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " T"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 4,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-0-3-1&price=2684.50&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-0-3-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2015.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2684.50"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "669.50"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 2,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 5,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 5,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-1-4-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-1-4-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 3,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 5,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 6,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-2-4-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-2-4-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 2,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 6,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 7,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-1-5-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-1-5-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 3,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 6,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 8,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-2-5-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-2-5-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 2,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 7,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 9,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-1-6-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-1-6-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 3,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 7,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 10,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-2-6-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-2-6-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 2,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 8,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 11,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-1-7-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-1-7-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            },
+            {
+                "AirLegReferenceList": {
+                    "AirLegReference": [
+                        {
+                            "AirLegIndex": 3,
+                            "AirLegListIndex": 1,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "AirLegIndex": 8,
+                            "AirLegListIndex": 2,
+                            "BookingSegmentList": {
+                                "BookingSegment": [
+                                    {
+                                        "AirSegmentIndex": 1,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " Y"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 2,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " H"
+                                    },
+                                    {
+                                        "AirSegmentIndex": 3,
+                                        "BookingClass": "Coach",
+                                        "BookingCode": " K"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "AirProductIndex": 12,
+                "CategoryCode": 0,
+                "CategoryCodeList": {
+                    "CategoryCode": [
+                        0
+                    ]
+                },
+                "DetailsURL": "http://www.expedia.de/pubspec/scripts/eap.asp?GOTO=UDP&piid=v5-c6b1e020462bfe3cd4d294a30df310ae-2-7-1&price=2968.74&currencyCode=EUR&departTLA=L1:TXL|L2:BOB&arrivalTLA=L1:BOB|L2:TXL&departDate=L1:2016-09-07|L2:2016-09-15&nAdults=1&nSeniors=0&nChildren=0&infantInLap=N&class=coach&sort=Price&tripType=RoundTrip&productType=air&eapid=15070-6&serviceVersion=V5&messageGuid=e3c335d8-4091-4889-88ac-d726005e4912&langid=1031",
+                "OpaqueFlight": false,
+                "PIID": "v5-c6b1e020462bfe3cd4d294a30df310ae-2-7-1",
+                "PriceInformation": {
+                    "PassengerDetailsList": {
+                        "PassengerDetails": [
+                            {
+                                "PassengerCode": "Adult",
+                                "PassengerCount": 1,
+                                "PerPersonPrice": {
+                                    "CurrencyCode": "EUR",
+                                    "Value": "2124.00"
+                                }
+                            }
+                        ]
+                    },
+                    "TotalBookingFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "0.00"
+                    },
+                    "TotalPrice": {
+                        "CurrencyCode": "EUR",
+                        "Value": "2968.74"
+                    },
+                    "TotalTaxesAndFees": {
+                        "CurrencyCode": "EUR",
+                        "Value": "844.74"
+                    }
+                },
+                "SplitTicket": false
+            }
+        ]
+    }
+}
