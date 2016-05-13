@@ -12,7 +12,7 @@ module ExpediaApi
         json = json.with_indifferent_access
         outbound_legs_json = json["AirLegListCollection"]["AirLegList"][0]["AirLeg"]
         return_legs_json   = json["AirLegListCollection"]["AirLegList"][1]["AirLeg"]
-        products_json      = JSON.parse(response_list.response.body).with_indifferent_access[:AirProductList][:AirProduct]
+        products_json      = JSON.parse(response.response.body).with_indifferent_access[:AirProductList][:AirProduct]
         outbound_legs      = extract_legs(outbound_legs_json)
         return_legs        = extract_legs(return_legs_json)
         combinations       = extract_combinations(products_json, outbound_legs:outbound_legs, return_legs:return_legs)
