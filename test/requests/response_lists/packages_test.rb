@@ -60,7 +60,7 @@ describe ExpediaApi::ResponseLists::Packages do
     end
   end
 
-  describe "#extract_hotels" do
+  describe "#extract_packages" do
     let(:hotels) { response_list.extract_hotels(hotels_json) }
     let(:flights) { response_list.extract_flights(flights_json) }
     let(:sample_packages) do
@@ -79,6 +79,14 @@ describe ExpediaApi::ResponseLists::Packages do
     end
     it "associates flights with each package" do
       assert_equal true, sample_packages.all? {|p| p.flight.class == ExpediaApi::Entities::PackageFlight }
+    end
+  end
+
+  describe "#extract_entries_from_response" do
+    let(:raw_data) { response_list.response }
+    it "returns an array of packages" do
+      assert_equal Array, response_list.extract_entries_from_response(raw_data).class
+      assert_equal ExpediaApi::Entities::Package, response_list.extract_entries_from_response(raw_data).first.class
     end
   end
 end

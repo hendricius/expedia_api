@@ -7,12 +7,12 @@ module ExpediaApi
       end
 
       def extract_entries_from_response(response)
-        json = extract_data_from_response(response).with_indifferent_access
-        return [] if json.empty?
-        json = json.with_indifferent_access
-        flights  = extract_flights(json[:FlightList][:Flight])
-        hotels   = extract_hotels(json[:HotelList][:Hotel])
-        packages = extract_packages(json["PackageSearchResultList"]["PackageSearchResult"], hotels: hotels, flights: flights)
+        json     = extract_data_from_response(response)
+        return   [] if json.is_a?(Array) || json.empty?
+        json     = json.with_indifferent_access
+        flights  = extract_flights(extract_raw_flights_from_json(json))
+        hotels   = extract_hotels(extract_raw_hotels_from_json(json))
+        packages = extract_packages(extract_raw_packages_from_json(json), hotels: hotels, flights: flights)
         packages
       end
 
@@ -44,6 +44,33 @@ module ExpediaApi
           entity.flight = flights_by_index[entity.flight_index]
           entity.hotel  = hotels_by_index[entity.hotel_index]
           entity
+        end
+      end
+
+      # returns the flight data extracted from the json
+      def extract_raw_flights_from_json(json)
+        if json[:FlightList] && json[:FlightList][:Flight]
+          json[:FlightList][:Flight]
+        else
+          []
+        end
+      end
+
+      # returns the hotel data extracted fron the json
+      def extract_raw_hotels_from_json(json)
+        if json[:HotelList] && json[:HotelList][:Hotel]
+          json[:HotelList][:Hotel]
+        else
+          []
+        end
+      end
+
+      # returns the package data extracted from the json
+      def extract_raw_packages_from_json(json)
+        if json[:PackageSearchResultList] && json[:PackageSearchResultList][:PackageSearchResult]
+          json[:PackageSearchResultList][:PackageSearchResult]
+        else
+          []
         end
       end
     end
