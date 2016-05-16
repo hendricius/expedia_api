@@ -69,6 +69,10 @@ describe ExpediaApi::Entities::Package do
       entity.raw_data[:DetailsUrl] = "http://foo"
       assert_equal "http://foo", entity.details_url
     end
+    it "returns nil if there is no details url" do
+      entity.raw_data[:DetailsUrl] = nil
+      assert_equal nil, entity.details_url
+    end
   end
 
 
