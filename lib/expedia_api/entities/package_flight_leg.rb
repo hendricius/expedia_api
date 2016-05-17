@@ -60,7 +60,12 @@ module ExpediaApi
 
       # extracts the segments of the flight from the json
       def extract_segments
-        @raw_data[:FlightSegment] || []
+        data = @raw_data[:FlightSegment] || []
+        if data.is_a?(Array)
+          data
+        else
+          [data]
+        end
       end
 
       # returns the total time it will in seconds.

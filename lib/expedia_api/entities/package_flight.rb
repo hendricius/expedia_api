@@ -19,7 +19,12 @@ module ExpediaApi
 
       # extracts the json of the flight legs from the data.
       def extract_flightlegs
-        @raw_data.fetch(:FlightItinerary, {}).fetch(:FlightLeg, {})
+        data = @raw_data.fetch(:FlightItinerary, {}).fetch(:FlightLeg, [])
+        if data.is_a?(Array)
+          data
+        else
+          [data]
+        end
       end
 
     end
