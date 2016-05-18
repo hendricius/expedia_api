@@ -105,7 +105,7 @@ module ExpediaApi
       ExpediaApi::ResponseLists::Flights.new(exception: e)
     end
 
-    def search_packages(hotel_ids: [], region_ids: [], from_date:, to_date:, from_airport:, to_airport:, other_options: {})
+    def search_packages(hotel_ids: [], region_ids: [], from_date:, to_date:, from_airport:, to_airport:, piid: nil, other_options: {})
       # convert/validate the parameters. the api expects a comma separated
       # string.
       hotel_ids  = hotel_ids.join(",") if hotel_ids.is_a?(Array) && hotel_ids.any?
@@ -114,6 +114,7 @@ module ExpediaApi
       parameters = {}.merge(other_options)
       parameters[:hotelids]  = hotel_ids   if hotel_ids.length
       parameters[:regionids] = region_ids  if region_ids.length
+      parameters[:piid]      = piid        if piid
       # build the url for the request to match the specifications
       path_uri = build_package_search_request_path(from_airport: from_airport, to_airport: to_airport, from_date: from_date, to_date: to_date)
       base_uri = "/wsapi/rest/package/v1/search"
